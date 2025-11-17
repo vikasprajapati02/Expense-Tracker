@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+      background: url('image.jpg') no-repeat center/cover;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    overflow: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 350px;
+    margin: 30px auto;
+    background-color: rgba(227, 227, 227, 0.694);
+    padding: 20px;
+    border: 1px solid #d3d0d0;
+    border-radius: 10px;
+    box-shadow: var();
+}
+
+h2{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card{
+    width: 30%;
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgba(185, 174, 174, 0.703);
+    box-shadow: var(--box-shadow);
+}
+
+.card p{
+    font-size: 18px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+#income{
+    color: rgb(0, 255, 0);
+}
+
+#expense{
+    color: red;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form input, .form select, button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+button{
+    background: #00f2fe;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background: white;
+}
+
+.t-heading{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    background: rgba(242, 241, 244, 0.671);
+    padding: 12px;
+    border-radius: 12px;
+    margin: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.del-btn{
+    border: none;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
